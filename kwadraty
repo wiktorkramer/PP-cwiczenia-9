@@ -1,0 +1,27 @@
+import java.awt.*;
+
+public class App extends Frame
+{
+
+	public static void main(String[] args)
+	
+	{
+		new App();
+	}
+
+	public App()
+	{
+		setSize(8, 480);
+		setVisible(true);
+	}
+
+	public void paint(Graphics g)
+	{
+		g.setColor(Color.red);
+		g.fillRect(100, 50, 10, 10);
+		g.fillRect(111, 50, 10, 10);
+		g.fillRect(122, 50, 10, 10);
+		g.fillRect(133, 50, 10, 10);
+		g.fillRect(144, 50, 10, 10);
+	}
+}
