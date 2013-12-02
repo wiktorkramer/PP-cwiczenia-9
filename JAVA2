@@ -1,0 +1,18 @@
+public class dwojka 
+{
+	public static void main(String[] args) 
+	{
+		int k;
+		int wrt = 2;
+		int j;
+	for(k = 1; k<=10; k++)
+	{
+		for(int m = 0; m<=10; m++)
+		{
+			
+			j = k * wrt;
+			System.out.print(" " + j);
+		}
+	}
+}
+}
