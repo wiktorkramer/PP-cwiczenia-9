@@ -1,18 +1,68 @@
-public class dwojka 
+public class App 
 {
+	
 	public static void main(String[] args) 
 	{
-		int k;
-		int wrt = 2;
-		int j;
-	for(k = 1; k<=10; k++)
+		System.out.println("================Zadanie 1================");
+		Zadanie1.Metoda1();
+		System.out.println("================Zadanie 2================");
+		Zadanie2.Metoda2();
+		System.out.println("================Zadanie 3================");
+		Zadanie3.Metoda3();
+		System.out.println("================Zadanie 4================");
+	}
+	
+	static class Zadanie1
+
 	{
-		for(int m = 0; m<=10; m++)
+		public static void Metoda1()
 		{
-			
-			j = k * wrt;
-			System.out.print(" " + j);
+		
+		for (int x=1; x<=10; x++)
+		{
+			System.out.println(x);
+		}
+		
+		}
+	}
+	
+	static class Zadanie2
+	{
+	public static void Metoda2()
+	
+	{
+	        int k;
+	        int wrt = 2;
+	        int j;
+	        
+	        for(k = 1; k<=10; k++)
+	        {
+	        	System.out.println();
+	        for(int m = 0; m<=10; m++)
+	        	{
+		        	j = k * wrt;
+		        	System.out.print(" " + j);
+	        	}
+	        
+	        }
+	        
+		}
+	}
+	static class Zadanie3
+	{
+	public static void Metoda3()
+	{
+		{
+			for(int i=1; i<10; i++)
+			{
+				System.out.print("\n");
+				for(int j=1; j<10; j++)
+		         {
+		            System.out.printf("%5d", i * j);
+		         }
+			}
 		}
 	}
 }
+	
 }
