@@ -1,6 +1,32 @@
-*.class
+public class App 
+{
+	
+	public static void main(String[] args) 
+	{
+		Zadanie1.Metoda1();
+		Zadanie2.Metoda2();
+	}
+	
+	static class Zadanie1
 
-# Package Files #
-*.jar
-*.war
-*.ear
+	{
+		public static void Metoda1()
+		{
+		
+		for (int x=1; x<=10; x++)
+		{
+			System.out.println(x);
+		}
+		
+		}
+	}
+	
+	static class Zadanie2
+
+	{
+		public static void Metoda2()
+		{
+			System.out.println("test");
+		}
+	}
+}
