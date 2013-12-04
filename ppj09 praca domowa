@@ -1,0 +1,46 @@
+import java.awt.BasicStroke;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.geom.Path2D;
+import java.util.Scanner;
+
+public class App extends Frame
+{
+	public static void main(String[] args)
+	{
+		Scanner czytnik = new Scanner(System.in);
+		System.out.println("Ile ramion ma mieć gwiazda?");
+		new App();
+		czytnik.close();
+	}
+
+	public App()
+	{
+		setSize(540, 380);
+		setVisible(true);
+	}
+
+	public void paint(Graphics g)
+	{
+		Graphics2D g2 = (Graphics2D) g; 
+		g2.setStroke (new BasicStroke (15.0f)); 
+
+		Rectangle r = getBounds(); 
+		float width = 166; 
+		float height = 166; 
+
+		g2.translate( r.getWidth() / 2 - width/2, r.getHeight() / 2 - height/2); 
+
+		Path2D star = new Path2D.Float (); 
+		star.moveTo (width/5F, height-1); 
+		star.lineTo (width/2F, 0); 
+		star.lineTo (4*width/5F, height-1); 
+		star.lineTo (0, 2*height/5F); 
+		star.lineTo (width-1, 2*height/5F); 
+		star.closePath (); 
+		g2.draw (star); 
+		g2.fill (star);
+	}
+}
